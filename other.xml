@@ -1,0 +1,19 @@
+<application>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="C:/Program Files/nodejs/node.exe">
+      <version-cache version="8.10.0" last-modified="1520357102000" />
+    </local-interpreter>
+  </component>
+  <component name="SvnApplicationSettings">
+    <option name="myCheckoutURLs">
+      <list>
+        <option value="https://m2aadhil@bitbucket.org/teamproject_x/applicationtier.git" />
+      </list>
+    </option>
+    <option name="myTypedURLs">
+      <list>
+        <option value="https://m2aadhil@bitbucket.org/teamproject_x/applicationtier.git" />
+      </list>
+    </option>
+  </component>
+</application>
