@@ -37,21 +37,25 @@ import {
 import {PlayerComponent} from './player/player.component';
 import {RouterModule, Routes} from '@angular/router';
 import {YoutubePlayerModule} from 'ngx-youtube-player';
+import { AuthenticationComponent } from './authentication/authentication.component';
 
 const appRoutes: Routes = [
+    {path: '', redirectTo: "/login", pathMatch: 'full'},
     {path: 'player', component: PlayerComponent},
-    {path: 'channel', component : ChannelComponent, pathMatch: 'full'}
+    {path: 'channel', component : ChannelComponent, pathMatch: 'full'},
+    {path: 'login', component: AuthenticationComponent}
 ];
 
 @NgModule({
     declarations: [
         AppComponent,
         ChannelComponent,
-        PlayerComponent
+        PlayerComponent,
+        AuthenticationComponent
     ],
     imports: [
         YoutubePlayerModule,
-        RouterModule.forRoot(appRoutes, {useHash:true}),
+        RouterModule.forRoot(appRoutes, {useHash:false}),
         BrowserModule,
         BrowserAnimationsModule,
         BrowserModule,

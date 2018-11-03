@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 @Component({
     selector: 'app-channel',
-    template: '<p>itowkrs</p>',
+    templateUrl: './channel.component.html',
     styleUrls: ['./channel.component.css']
 })
 export class ChannelComponent implements OnInit {
